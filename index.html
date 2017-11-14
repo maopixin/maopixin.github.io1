@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div id="case" class="clearfix">
+        <!-- 个人信息 -->
+        <div class="person-info fl">
+            <div class="p-img fl">
+                <img src="../img/per-img.jpg" alt="">
+            </div>
+            <div class="p-info fl">
+                <h1 class="name">你好,我的名字是
+                    <br/>毛丕新</h1>
+                <p>
+                    我是一名前端开发人员，性格开朗，有上进心。
+                    <br/>家住山东省菏泽市，现居北京
+                    <br/>这是我的个人网站，我会把我的一切告诉你。这里有我的练习，我的作品，还有最重要的联系方式
+                </p>
+            </div>
+        </div>
+        <!-- 我的练习 -->
+        <div class="exercise fl">
+            <h2>
+                学习中的小练习
+            </h2>
+            <p>
+                这是我在学习前端过程中所做的部分练习 ,这其中有html+css的页面 ,比如一些电商网站的PC端和移动端 ,响应式的网站 ,还有带有js交互的小练习.
+            </p>
+            <div id="ex-button" class="button">
+                点我查看
+            </div>
+        </div>
+        <!-- 我的作品 -->
+        <div class="works fl">
+            <h2>
+                觉得还可以拿出手的小作品
+            </h2>
+            <p>
+                自己亲手写出的作品，其中发现了很多的问题与自身的不足。但是我不但一步步的解决了问题，而且也提升了自己。
+            </p>
+            <div id="" class="button">
+                点我查看
+            </div>
+        </div>
+        <!-- 技能 -->
+        <div class="skill fl">
+            <h2>
+                经验与能力
+            </h2>
+            <ul>
+                <li>
+                    <div class="title clearfix">
+                        <span class="fl">HTML</span>
+                        <span class="fr">95%</span>
+                    </div>
+                    <div class="long html">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="title clearfix">
+                        <span class="fl">css</span>
+                        <span class="fr">95%</span>
+                    </div>
+                    <div class="long css">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="title clearfix">
+                        <span class="fl">react</span>
+                        <span class="fr">60%</span>
+                    </div>
+                    <div class="long react">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="title clearfix">
+                        <span class="fl">vue</span>
+                        <span class="fr">70%</span>
+                    </div>
+                    <div class="long vue">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 联系方式 -->
+        <div class="call fl">
+            <h2>
+                与我联系
+            </h2>
+            <ul>
+                <li>
+                    <img src="../img/qq.png" alt="">
+                    <span>647864529</span>
+                </li>
+                <li>
+                    <img src="../img/tel.png" alt="">
+                    <span>18364076997</span>
+                </li>
+                <li>
+                    <img src="../img/email.png" alt="">
+                    <span>18364076997@163.com</span>
+                </li>
+                <li>
+                    <img src="../img/git.png" alt="">
+                    <a href="">github主页</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 遮罩层 -->
+    <div id="shade">
+        <div id="top" class="top">
+            <div id="text" class="text txt">
+                欢迎来到我的个人网站
+            </div>
+        </div>
+        <div id="bottom" class="bottom">
+            <div id="text2" class="text txt">
+                欢迎来到我的个人网站
+            </div>
+            <div id="text3" class="txt">
+                点击任意地方进入
+            </div>
+        </div>
+    </div>
+    <!-- 弹出层 -->
+    <section id="jump" class="jump">
+        <div id="cancel" class="cancel">
+            ×
+        </div>
+        <ul id="item-box" class="clearfix"></ul>
+    </section>
+</body>
+<!-- jq1.11版本 -->
+<script src="js/jquery.min.js"></script>
+<!-- jq颜色插件 -->
+<script src="js/jquery-color.js"></script>
+<!-- 自己封装的js -->
+<script src="js/mt.js"></script>
+<!-- 主体js -->
+<script src="js/index.js"></script>
+
+</html>

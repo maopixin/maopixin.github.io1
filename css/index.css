@@ -1,0 +1,450 @@
+/* 初始化样式*/
+body,h1,h3,p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+input{
+	border: none;
+	padding: 0;
+}
+/*工具类*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{
+	*zoom: 1;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+
+/* 高度100% */
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background: url('../img/bg.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+/* 主体部分 */
+#case{
+    height: 600px;
+    width: 5126px;
+    position: absolute;
+    left: 240px;
+    opacity: 0;
+    box-shadow: 0 2rem 4rem 0.25rem rgba(46, 43, 55, 0.575);
+}
+#case .person-info{
+    height: 100%;
+}
+#case .person-info .p-info{
+    padding: 67px;
+    height: 600px;
+    box-sizing: border-box;
+    color: #fff;
+    background: linear-gradient(45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+}
+#case .person-info .p-info h1{
+    position: relative;
+    font:600 50px/69px '微软雅黑';
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#case .person-info .p-info h1::after{
+    content: '';
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+#case .person-info .p-info p{
+    font: 16px/42px "微软雅黑";
+}
+#case .person-info .p-img img{
+    width: 336px;
+    height: 600px;
+}
+
+
+/* 小练习 */
+
+#case .exercise{
+    padding: 80px 160px 80px 400px;
+    color: #fff;
+    position: relative;
+    width: 960px;
+    height: 600px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('../img/ex-bg.jpg') no-repeat ;
+}
+#case .exercise::before{
+    z-index: 0;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+#case .exercise h2{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font: 36px/69px '微软雅黑';
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#case .exercise h2::after{
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+#case .exercise p{
+    position: relative;
+    z-index: 1;
+    font: 16px/42px "微软雅黑";
+}
+#case .exercise .button{
+    cursor: pointer;
+    width: 100px;
+    padding: 20px 40px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    color: #a6c1ee;
+    border: 1px solid #a6c1ee;
+    text-align: center;
+    margin:60px 0px;
+    font-size:22px; 
+    border-radius: 8px;
+}
+
+/* 作品 */
+#case .works{
+    position: relative;
+    box-sizing: border-box;
+    padding: 80px 400px 0 60px;
+    color: #fff;
+    width: 1248px;
+    height: 600px;
+    background: url('../img/works-bg.jpg') no-repeat;
+    background-size: cover;
+}
+#case .works::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0,0, 0.3)
+}
+#case .works h2{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font: 36px/69px '微软雅黑';
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+#case .works h2:after{
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    bottom: -25px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+#case .works p{
+    width: 400px;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font: 16px/42px "微软雅黑";
+}
+#case .works .button{
+    cursor: pointer;
+    overflow: hidden;
+    width: 100px;
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid #a6c1ee;
+    margin: 60px 0 0 30px;
+    position: relative;
+    z-index: 1;   
+}
+#case .works .button:hover::before{
+    left: 205px;
+}
+#case .works .button::before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 25px;
+    height: 71px;
+    top: 0;
+    left: -45px;
+    opacity: 0.3;
+    transition: all 0.25s ease-out;
+    transform: skewX(-25deg);
+}
+/* 技能 */
+
+#case .skill{
+    width: 1000px;
+    height: 600px;
+    padding: 0 200px;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, #cbc9c9 0%, #949393 100%)
+}
+#case .skill h2{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font: 36px/69px '微软雅黑';
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+#case .skill h2:after{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    width: 60px;
+    height: 2px;
+    left: 270px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+#case .skill li .long{
+    width: 570px;
+    height: 4px;
+    margin: 20px 0 40px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+}
+#case .skill li .html{
+    width: 570px;
+}
+#case .skill li .css{
+    width: 570px;
+}
+#case .skill li .react{
+    width: 360px;
+}
+#case .skill li .vue{
+    width: 420px;
+}
+/* 联系方式 */
+#case .call{
+    width: 760px;
+    height: 600px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #e894c6 20%, #e37b7c 60%, #7eb8e4);
+}
+#case .call h2{
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font: 36px/69px '微软雅黑';
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+#case .call h2:after{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    width: 60px;
+    height: 2px;
+    left: 350px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+#case .call img{
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 30px;
+}
+#case .call a{
+    color: #fff;
+}
+#case .call li{
+    font: 28px/36px '微软雅黑';
+    color: #fff;
+    margin: 40px 0 40px 200px;
+}
+
+
+/* 遮罩层 */
+#shade{
+    position: absolute;
+    z-index: -20;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#shade .top,#shade .bottom{
+    position: absolute;
+    z-index: 99999;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+#shade .top{
+    top: 0;
+    background-image: linear-gradient(0deg,#c5c7c6 0%,#adb1b1 100%)
+}
+#shade .bottom{
+    bottom: 0;
+    background-image: linear-gradient(0deg,#e4e4e2 0%,#c5c7c6 100%)
+}
+#shade .text{
+    left: 0;
+    opacity: 0;
+    font: 100px/120px "微软雅黑";
+    position: absolute;
+    color: #fff;
+}
+#shade .top .text{
+    bottom: -120px;
+}
+#shade .bottom .text{
+    top: 0px;
+}
+#shade .bottom #text3{
+    position: absolute;
+    top: 300px;
+    color: #fff;
+    font-size:30px; 
+    opacity: 0;
+}
+
+/* 弹出层 */
+.jump{
+    position: absolute;
+    z-index: 99999999;
+    top: 150px;
+    bottom: 50px;
+    opacity: 0;
+    display: none;    
+    width: 1200px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 80px 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    border-right: 1px solid rgba(2, 2, 2, 0.28);
+    border-left: 1px solid rgba(2, 2, 2, 0.28);
+    border-top: 1px solid rgba(250, 250, 250, 0.27);
+    box-shadow: rgba(255,255,255,0.3) 0 1px 0, rgba(0,0,0,0.3) 0 -1px 0;
+    box-shadow: 0 0 5px rgba(1, 1, 1, 0.7);
+}
+
+.jump .cancel{
+    position: absolute;   
+    width: 40px;
+    height: 40px;
+    text-align:center;
+    right: 20px;
+    top:20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transform: rotateZ(0);
+    transition: 0.2s;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.jump .cancel:hover{
+    transform: rotateZ(180deg);
+}
+.jump ul{
+    height: 100%;
+    overflow: auto;    
+}
+.jump li{
+    cursor: pointer;
+    width: 232px;
+    height: 308px;
+    margin: 0px 8px 30px 8px;
+    box-sizing: border-box;
+    padding: 60px 32px 0 30px;
+    background: url('../img/item.png') no-repeat;
+    background-size: 232px 308px;
+}
+.jump li img{
+    width:170px;
+    height: 170px;
+}
+.jump li span{
+    font: 12px/14px '微软雅黑';
+}
+.jump li .work-name{
+    padding: 8px;
+    display: block;
+}
+.jump li .work-synopsis{
+    padding-left:8px; 
+}
+
+/* 滚动条
+.scrollBox{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.scrollTool{
+    position: absolute;
+    width: 2px;
+    right: 9px;
+    top: 20px;
+    bottom: 20px;
+    background-color: #000;
+}
+.scroll{
+    width: 10px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: -4px;
+    border-radius: 5px;
+} */
