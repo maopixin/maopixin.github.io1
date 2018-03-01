@@ -419,32 +419,3 @@ body{
 .jump li .work-synopsis{
     padding-left:8px; 
 }
-
-/* 滚动条
-.scrollBox{
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.content{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.scrollTool{
-    position: absolute;
-    width: 2px;
-    right: 9px;
-    top: 20px;
-    bottom: 20px;
-    background-color: #000;
-}
-.scroll{
-    width: 10px;
-    height: 100px;
-    background-color: red;
-    position: absolute;
-    top: 0;
-    left: -4px;
-    border-radius: 5px;
-} */

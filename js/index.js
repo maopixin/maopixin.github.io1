@@ -22,7 +22,7 @@ $('#text2').animate({
 $.ajax({
     type: "GET",
     url: "http://39.106.20.194/phpcms/api.php",
-    data: "op=autoload&modelid=1&catid=" + 14 + "&pagesize=20&page=" + 1 + "",
+    data: "op=autoload&modelid=1&catid=" + 27 + "&pagesize=60&page=" + 1 + "",
     async: true,
     jsonp: "callback",
     jsonpCallback: "fn",
@@ -30,11 +30,10 @@ $.ajax({
     success: function (data) {
         $('#item-box').empty();
         data = JSON.parse(JSON.stringify(data));
-        console.log(data)
         $.each(data, function (i, e) {
-            var li = $('<li class="fl"><img src="' + e.thumb + '" alt=""><span class="work-name">' + e.title + '</span><span class="work-synopsis">我是介绍我是介绍我是介绍</span></li>');
+            var li = $('<li class="fl"><img src="' + e.thumb + '" alt=""><span class="work-name">' + e.title + '</span><span class="work-synopsis">'+e.description+'</span></li>');
             $(li[0]).click(function(){
-                window.open(e.url);
+                window.open('http://'+e.url);
             })
             $('#item-box').append(li);
         });
